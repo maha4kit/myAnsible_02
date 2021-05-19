@@ -1,0 +1,18 @@
+---
+- students:  
+  - name: anil
+    phono: 99999999
+    address: 
+     - doorno: 234
+     - street: 1
+     - pincode: 500072
+
+  - name: raj
+    phono: 88888888
+    address: hyd
+
+  - name:  dev 
+    phono: 777777777777
+    address: hyd
+
+  # spacc notation 

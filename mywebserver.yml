@@ -23,5 +23,5 @@
   - name: i want to start websever on RedHat node only
     service:
       name: "{{mywebpackageforredhat}}"
-      sate: started
+      state: started
     when: ansible_os_family=="RedHat"

@@ -5,12 +5,12 @@
   tasks:
   - name: i want to install websever on ubuntu node only
     apt:
-     name: apache2
+     name: "{{mywebpackageforubuntu}}"
      state: present
     when: ansible_os_family=="Debian"
   
   - name: i want to install websever on RedHat node only
     yum:
-      name: httpd
+      name: "{{mywebpackageforredhat}}"
       state: present
     when: ansible_os_family=="RedHat"

@@ -8,9 +8,20 @@
      name: "{{mywebpackageforubuntu}}"
      state: present
     when: ansible_os_family=="Debian"
+  - name: i want to start websever on ubuntu node only
+    service:
+      name: "{{mywebpackageforubuntu}}"
+      state: started
+    when: ansible_os_family=="Debian"
   
   - name: i want to install websever on RedHat node only
     yum:
       name: "{{mywebpackageforredhat}}"
       state: present
+    when: ansible_os_family=="RedHat"
+
+  - name: i want to start websever on RedHat node only
+    service:
+      name: "{{mywebpackageforredhat}}"
+      sate: started
     when: ansible_os_family=="RedHat"

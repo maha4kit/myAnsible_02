@@ -1,0 +1,14 @@
+---
+- host: 172.31.26.11
+  become: yes
+  tasks:
+  - name: i want to execute linux commands directly with ansible mode
+    command: hostname
+    register: myresult
+
+  - name: i want to display the first task result
+    debug:
+       msg: "{{myresult}}"
+
+
+

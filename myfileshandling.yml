@@ -13,3 +13,8 @@
     service:
       name: apache2
       state: restarted
+
+  - name: i want to replace file on node side
+    template:
+      src: myindex.j2
+      dest: /var/www/html/index.html

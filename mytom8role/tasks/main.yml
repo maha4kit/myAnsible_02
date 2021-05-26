@@ -1,2 +1,12 @@
 ---
 # tasks file for mytom8role
+- include_tasks: installjava.yml
+- include_tasks: creategroupuser.yml
+- include_tasks: creategroupuser.yml
+- include_tasks: download.yml
+- include_tasks: extract.yml
+- include_tasks: Permissions.yml
+- include_tasks: ServiceFile.yml
+- include_tasks: tomstart.yml
+- include_tasks: tomuser.yml
+- include_tasks: tomrestart.yml

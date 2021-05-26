@@ -1,0 +1,5 @@
+---
+- name: Create a systemd tomcat Service File
+  template:
+     src:  templates/mytomservice.j2
+     dest: /etc/systemd/system/tomcat.service
